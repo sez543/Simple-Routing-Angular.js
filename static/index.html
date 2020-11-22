@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="index.js" defer></script>
+    <title>Entry</title>
+  </head>
+  <body class="wrapper">
+    <div ng-app="Body" class="main">
+      <div ng-view></div>
+      <div class="buttons">
+        <button
+          onclick="window.location.href='#/!'"
+          type="button"
+          class="btn btn-info"
+          id="main"
+        >
+          Home
+        </button>
+        <button
+          onclick="window.location.href='#!about'"
+          type="button"
+          class="btn btn-info"
+          id="about"
+        >
+          About
+        </button>
+        <button
+          onclick="window.location.href='#!contacts'"
+          type="button"
+          class="btn btn-info"
+          id="contacts"
+        >
+          Contacts
+        </button>
+        <button
+          onclick="window.location.href='#!login'"
+          type="button"
+          class="btn btn-info"
+          id="login"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
